@@ -26,6 +26,7 @@ else
         read -n1 -r -p "Update Needed! We'll continue from here..."
 
 #Backup
+read -n1 -r -p "We will now backup your current build and start the update. This may take awhile... Press any key to continue"
 mkdir ~/mn-backup
 cp ~/.snowgem/snowgem.conf ~/.snowgem/masternode.conf ~/mn-backup
 cp -r $WALLET ./mn-backup/$WALLET-bak
