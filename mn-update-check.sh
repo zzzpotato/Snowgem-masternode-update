@@ -41,6 +41,7 @@ chmod +x zcutil/build.sh depends/config.guess depends/config.sub autogen.sh shar
 ./zcutil/build.sh --disable-rust
 $DAEMON -daemon
 cd ~
+sleep $WAIT
 
 #verify
 VERSIONCHECK2=$($CLI getinfo | grep "\"version\"" | cut -d ":" -f 2 | cut -d "," -f 1 | xargs)
