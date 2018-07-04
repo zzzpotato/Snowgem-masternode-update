@@ -23,7 +23,7 @@ if [ $VERSIONCHECK == $LATEST ]; then
         echo "Nothing needed, you're on the latest version!";
         exit
 else
-        read -n1 -r -p "Update Needed! We'll continue from here..."
+        read -n1 -r -p "Update Needed! We'll continue from here... Press any key to continue"
 
 #Backup
 read -n1 -r -p "We will now backup your current build and start the update. This may take awhile... Press any key to continue"
