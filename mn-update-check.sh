@@ -3,7 +3,7 @@ clear
 WALLET=snowgem-wallet
 DAEMON=~/$WALLET/src/snowgemd
 CLI=~/$WALLET/src/snowgem-cli
-LATEST=2000455
+LATEST=2000456
 
 #If you get errors about the wallet loading raise this limit
 WAIT=60
