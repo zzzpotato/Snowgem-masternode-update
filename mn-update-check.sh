@@ -3,7 +3,8 @@ clear
 WALLET=snowgem-wallet
 DAEMON=~/$WALLET/src/snowgemd
 CLI=~/$WALLET/src/snowgem-cli
-LATEST=2000456
+LATEST="$(wget -nv -qO - https://explorer.snowgem.org/api/getinfo | grep "\"version\"" | cut -d ":" -f 2 | cut -d "," -f 1 | xargs)";
+#LATEST=2000456
 
 #If you get errors about the wallet loading raise this limit
 WAIT=60
